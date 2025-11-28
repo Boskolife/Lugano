@@ -1,0 +1,94 @@
+.footer {
+    @include adaptive-value("padding-top", 100, 85, 1);
+    padding-bottom: 85px;
+    position: relative;
+    overflow: hidden;
+
+    &_bg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        min-width: 780px;
+        height: auto;
+        object-fit: cover;
+        z-index: 1;
+
+        @include media ("<tablet") {
+            height: auto;
+            bottom: 50%;
+            transform: translate(-50%, 40%);
+        }
+    }
+
+    &_inner {
+        position: relative;
+        z-index: 5;
+        text-align: center;
+    }
+
+    &_logo {
+        max-width: 495px;
+        width: 100%;
+        margin: 0 auto;
+        @include adaptive-value("margin-bottom", 24, 16, 1);
+    }
+
+    &_description {
+        @include adaptive-value("font-size", 42, 26, 1);
+        line-height: calc(48 / 42);
+        font-weight: 500;
+        color: #EDF4F6;
+        font-family: $base-font-serif;
+
+        br{
+            display: none;
+
+            @include media ("<phone") {
+                display: block;
+            }
+        }
+    }
+
+    &_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptive-value("margin-top", 96, 52, 1);
+
+        @include media ("<tablet") {
+            flex-direction: column;
+        }
+
+        &_item {
+            font-size: 18px;
+            @include letter-spacing-percent(-2);
+            line-height: calc(22 / 18);
+            color: #A0A0A0;
+            padding: 0 24px;
+            transition: all 0.3s ease;
+
+            @include media ("<tablet") {
+                padding: 12px 0;
+            }
+
+            &:nth-child(2) {
+                border-left: 1px solid #445A64;
+                border-right: 1px solid #445A64;
+
+                @include media ("<tablet") {
+                    border-left: none;
+                    border-right: none;
+                    border-top: 1px solid #445A64;
+                    border-bottom: 1px solid #445A64;
+                }
+            }
+
+            &:not(p):hover {
+                color: $blue-300;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

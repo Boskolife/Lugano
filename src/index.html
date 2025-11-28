@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lugano.AI</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="stylesheet" href="/styles/main.scss">
+  <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+  {{> header }}
+  <main>
+    <section class="hero">
+      <img class="hero_bg" src="/images/hero-bg.png" alt="image not found" width="670" height="730">
+      <img class="hero_bg_2" src="/images/hero-bg-2.png" alt="image not found" width="876"
+        height="100%">
+      <div class="container">
+        <div class="hero_inner">
+          <div class="hero_logo">
+            <img src="/images/logo.png" alt="image not found" width="33" height="44">
+            <span>Lugano.AI</span>
+          </div>
+          <div class="hero_text">
+            <h1 class="hero_title">
+              The Privacy Infrastructure Layer of AI
+            </h1>
+            <p class="hero_description">
+              AI adoption is blocked by privacy concerns and high costs. Existing solutions force a
+              choice between innovation and security. Lugano eliminates this compromise.
+            </p>
+            <a href="mailto:contact@lugano.ai" class="hero_btn btn btn_primary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="optimization" id="enterprise">
+      <img class="optimization_bg" src="./images/optimization-bg.png" alt="image not found"
+        width="100%" height="100%">
+      <div class="container">
+        <div class="optimization_inner">
+          <div class="optimization_top">
+            <h2 class="optimization_title">Enterprise GPU Optimization</h2>
+            <p class="optimization_description">
+              For large enterprises, we offer intelligent GPU orchestration that cuts AI compute
+              costs by up to 90%. Deployed within your own encrypted environment, Lugano optimizes
+              GPU utilization and monetizes idle capacity, delivering massive savings on existing AI
+              workloads without sacrificing privacy.
+            </p>
+          </div>
+          <div class="optimization_bottom" id="private-ai">
+            <div class="optimization_bottom_image">
+              <img src="./images/locker.png" alt="locker" width="331" height="460">
+            </div>
+            <h2 class="optimization_title bottom_title">A Private AI for Everyone</h2>
+            <p class="optimization_description bottom_description">
+              For individuals, solo founders, and small teams, we provide
+              a personal, private AI. This is your own AI, with your data and your rules, all at a
+              low cost and without the complexity of managing your own infrastructure. It’s the
+              power of a personal AI without leaking your data to someone else’s cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="private" id="developers">
+      <img class="private_bg" src="./images/private-bg.png" alt="private-bg" width="100%"
+        height="100%">
+      <div class="container">
+        <div class="private_inner">
+          <img class="private_image" src="./images/private.png" alt="private-bg" width="430"
+            height="400">
+          <h2 class="private_title">A Privacy SDK for Developers</h2>
+          <p class="private_description">
+            For developers, we offer a simple, powerful SDK that privatizes all AI interactions with
+            a single line of code. This drop-in solution routes all AI calls through Lugano’s
+            privacy layer, making privacy-by-default a reality for any application, at any scale.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="future">
+      <img class="future_bg" src="./images/future-bg.png" alt="image not found" width="100%"
+        height="100%">
+      <div class="container">
+        <div class="future_inner">
+          <picture>
+            <source srcset="./images/future-inner-bg-mob.png" media="(max-width: 768px)">
+            <img class="future_inner_bg" src="./images/future-inner-bg.png" alt="image not found"
+              width="100%" height="100%">
+          </picture>
+          <div class="future_inner_text">
+            <h3 class="future_title">The Future is Private AI</h3>
+            <p class="future_description">
+              We believe every person and company will have their own AI. Lugano is the enabling
+              layer for this future. We don’t replace tools like ChatGPT; we coexist with them,
+              providing the essential privacy and cost-optimization layer that allows you to truly
+              own your AI.
+            </p>
+            <a href="mailto:contact@lugano.ai" class="future_btn btn btn_primary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> footer }}
+</body>
+
+</html>
