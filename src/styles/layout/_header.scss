@@ -90,6 +90,14 @@
         }
     }
 
+    &_logo {
+        width: 125px;
+
+        @include media ("<tablet") {
+            width: auto;
+        }
+    }
+
     &_nav {
 
         @include media ("<tablet") {
