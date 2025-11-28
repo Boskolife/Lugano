@@ -17,9 +17,10 @@
   {{> header }}
   <main>
     <section class="hero">
-      <img class="hero_bg" src="/images/hero-bg.png" alt="image not found" width="670" height="730">
-      <img class="hero_bg_2" src="/images/hero-bg-2.png" alt="image not found" width="876"
-        height="100%">
+      <picture class="hero_bg">
+        <source srcset="/images/hero-bg-mob.png" media="(max-width: 768px)">
+        <img src="/images/hero-bg.png" alt="image not found" width="670" height="730">
+      </picture>
       <div class="container">
         <div class="hero_inner">
           <div class="hero_logo">
