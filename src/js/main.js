@@ -8,9 +8,10 @@ function initBurger() {
   const header = document.querySelector('.header');
 
   burger.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    const isActive = menu.classList.toggle('active');
     burger.classList.toggle('active');
     header.classList.toggle('active');
+    burger.setAttribute('aria-expanded', isActive.toString());
   });
 }
 
